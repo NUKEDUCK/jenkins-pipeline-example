@@ -1,10 +1,11 @@
 #!/usr/bin/env groovy
 
 pipeline {
-    agent any
-    tools {
-        nodejs 'node-8.1.3'
+  agent {
+    label {
+      label 'noobjs20'
     }
+  }
     stages {
         stage('Build') {
             steps {
